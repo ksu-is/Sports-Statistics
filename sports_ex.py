@@ -5,9 +5,15 @@ def main():
     print('Welcome to the Sports Statistics Program!\n')
     print('What sport would you like scores for? (type number)\n')
     print('1. Football\n2. Soccer\n3. Basketball\n4. Baseball\n5. Hockey\n6. Tennis\n7. Rugby-League\n8. Volleyball\n9. Cricket\n10. Handball\n11. Rugby-Union')
-    sport = int(input('> ')) 
-    get_scores(sport)
-
+    sport = input('Q for quit or a number: ')
+    if sport.isdigit():
+        sport = int(sport)
+    while True:
+        if sport == "Q":
+            break
+        else:
+            get_scores(sport)
+            sport = int(input('Q for quit or another number: ')) 
 
 def get_scores(sport):
     if sport == 1:
@@ -33,7 +39,7 @@ def get_scores(sport):
         scores = sports.get_sport(sports.HANDBALL)
     elif sport == 11:
         scores = sports.get_sport(sports.RUGBY_U)
-        
+ 
 
         
     
