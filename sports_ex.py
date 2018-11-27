@@ -32,6 +32,7 @@ def get_scores(sport):
         scores = sports.get_sport(sports.HANDBALL)
     elif sport == 11:
         scores = sports.get_sport(sports.RUGBY_U)
+        
 
         
     
