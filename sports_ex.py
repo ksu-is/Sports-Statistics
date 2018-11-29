@@ -3,8 +3,9 @@ import sports
 #main switch board
 def main():
     print('Welcome to the Sports Statistics Program!\n')
+    print('I can provide you with all types of scores!\n')
     print('What sport would you like scores for? (type number)\n')
-    print('1. Football\n2. Soccer\n3. Basketball\n4. Baseball\n5. Hockey\n6. Tennis\n7. Rugby-League\n8. Volleyball\n9. Cricket\n10. Handball\n11. Rugby-Union')
+    print('1. Football\n2. Soccer\n3. Basketball\n4. Baseball\n5. Hockey\n6. Tennis\n7. Rugby-League\n8. Volleyball\n9. Cricket\n10. Handball\n11. Rugby-Union\n')
     sport = input('Q for quit or a number: ')
     if sport.isdigit():
         sport = int(sport)
