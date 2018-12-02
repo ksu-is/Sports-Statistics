@@ -67,11 +67,11 @@ def get_team(sport, team):
     if sport == constants.BASEBALL:
         team_info = {
             'name': team_info_raw[0],
-            'record': team_info_raw[9],
-            'seasons': team_info_raw[6:7][0],
+            'record': team_info_raw[10],
+            'seasons': team_info_raw[7],
             'playoff_app': team_info_raw[11],
             'pennants': team_info_raw[13],
-            'champs': team_info_raw[15],
+            'champs': team_info_raw[16],
             'leaders': ' '.join(team_info_raw[16:18])
         }
         return Team(team_info)

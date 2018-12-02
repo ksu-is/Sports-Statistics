@@ -5,16 +5,17 @@ def main():
     print('Welcome to the Sports Statistics Program!\n')
     print('I can provide you with all types of scores!\n')
     print('What sport would you like scores for? (type number)\n')
-    print('1. Football\n2. Soccer\n3. Basketball\n4. Baseball\n5. Hockey\n6. Tennis\n7. Rugby-League\n8. Volleyball\n9. Cricket\n10. Handball\n11. Rugby-Union\n')
+    print('1. Football\n2. Soccer\n3. Basketball\n4. Baseball\n5. Hockey\n6. Tennis\n7. Rugby-League\n8. Volleyball\n9. Cricket\n10. Handball\n11. Rugby-Union\n 12. Type in Team \n')
     sport = input('Q for quit or a number: ')
-    if sport.isdigit():
-        sport = int(sport)
+    
     while True:
+        if sport.isdigit():
+            sport = int(sport)
         if sport == "Q":
             break
         else:
             get_scores(sport)
-            sport = int(input('Q for quit or another number: ')) 
+            sport = str(input('Q for quit or another number: ')) 
 
 def get_scores(sport):
     if sport == 1:
@@ -40,13 +41,24 @@ def get_scores(sport):
         scores = sports.get_sport(sports.HANDBALL)
     elif sport == 11:
         scores = sports.get_sport(sports.RUGBY_U)
- 
+    elif sport == 12:  # this is for specific teams
+        team_name = str(input("Type the name of the baseball team"))
+        team_data = sports.get_team("baseball", team_name)
+    elif sport == 13:  # this is for specific teams
+        team_name = str(input("Type the name of the football team"))
+        team_data = sports.get_team("football", team_name)
+    elif sport == 14:  # this is for specific teams
+        team_name = str(input("Type the name of the hockey team"))
+        team_data = sports.get_team("hockey", team_name)
+    elif sport == 15:  # this is for specific teams
+        team_name = str(input("Type the name of the basketball team"))
+        team_data = sports.get_team("basketball", team_name)
 
-        
-    
-    
-    for score in scores:
-        print(score)
+    if sport < 12:  # if it is just a sport     
+        for score in scores:
+            print(score)
+    else: 
+        print(team_data)        
 
 if __name__ == '__main__':
     main()
