@@ -7,6 +7,7 @@
 1. DONE Add the ability to the program that allows the user to access sports other than Football, Soccer, Basketball. Muneeb
 1. DONE Add functionality to the program that allows the user to request a specific team. Ryan
 1. DONE Fix the error that resulted when pressing "Q" to quit. Ryan
+1. DONE Add message that displays when the user quits the program. Ryan
 1. Add print statements that prompt users to enter a specific team for either Football, Baseball, Basketball, or Hockey. Muneeb
 1. Add functionality to the program that allows the user to access player statistics. Muneeb
 1. Add a feature to the program that would allow the user to see if a specific player is injured. Ryan
