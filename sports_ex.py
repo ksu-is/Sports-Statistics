@@ -6,7 +6,7 @@ def main():
     print('I can provide you with all types of scores!\n')
     print('What sport would you like scores for? (type number)\n')
     print('1. Football\n2. Soccer\n3. Basketball\n4. Baseball\n5. Hockey\n6. Tennis\n7. Rugby-League\n8. Volleyball\n9. Cricket\n10. Handball\n11. Rugby-Union\n 12. Type in Team \n')
-    sport = input('Q for quit or a number: ')
+    sport = input('Enter a number: ')
     
     while True:
         if sport.isdigit():
@@ -16,7 +16,7 @@ def main():
             break
         else:
             get_scores(sport)
-            sport = str(input('Q for quit or another number: ')) 
+            sport = str(input('Enter another number or enter Q to quit: ')) 
 
 def get_scores(sport):
     if sport == 1:
