@@ -12,6 +12,7 @@ def main():
         if sport.isdigit():
             sport = int(sport)
         if sport == "Q":
+            print('Thanks for using the Sports Statistics Program.')
             break
         else:
             get_scores(sport)
