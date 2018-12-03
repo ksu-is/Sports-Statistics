@@ -5,7 +5,9 @@
 1. DONE Get the example code running in order to make changes. Ryan
 1. DONE Move code repository labeled Sports.py into Sports-Statistics folder in order to have everything in one location. Muneeb
 1. DONE Add the ability to the program that allows the user to access sports other than Football, Soccer, Basketball. Muneeb
-1. Add functionality to the program that allows the user to request a specific team. Muneeb
+1. DONE Add functionality to the program that allows the user to request a specific team. Ryan
+1. DONE Fix the error that resulted when pressing "Q" to quit. Ryan
+1. Add print statements that prompt users to enter a specific team for either Football, Baseball, Basketball, or Hockey. Muneeb
 1. Add functionality to the program that allows the user to access player statistics. Muneeb
 1. Add a feature to the program that would allow the user to see if a specific player is injured. Ryan
 
