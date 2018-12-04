@@ -5,7 +5,7 @@ def main():
     print('Welcome to the Sports Statistics Program!\n')
     print('I can provide you with all types of scores!\n')
     print('What sport would you like scores for? (type number)\n')
-    print('1. Football\n2. Soccer\n3. Basketball\n4. Baseball\n5. Hockey\n6. Tennis\n7. Rugby-League\n8. Volleyball\n9. Cricket\n10. Handball\n11. Rugby-Union\n 12. Type in Team \n')
+    print('1. Football\n2. Soccer\n3. Basketball\n4. Baseball\n5. Hockey\n6. Tennis\n7. Rugby-League\n8. Volleyball\n9. Cricket\n10. Handball\n11. Rugby-Union\n12. Type in name of any baseball team.\n13. Type in name of any football team.\n14. Type in any name for hockey team.\n15. Type in any name of any basketball team. \n')
     sport = input('Q for quit or a number: ')
     
     while True:
