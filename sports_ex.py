@@ -43,16 +43,16 @@ def get_scores(sport):
     elif sport == 11:
         scores = sports.get_sport(sports.RUGBY_U)
     elif sport == 12:  # this is for specific teams
-        team_name = str(input("Type the name of the baseball team"))
+        team_name = str(input("Type the name of the baseball team: "))
         team_data = sports.get_team("baseball", team_name)
     elif sport == 13:  # this is for specific teams
-        team_name = str(input("Type the name of the football team"))
+        team_name = str(input("Type the name of the football team: "))
         team_data = sports.get_team("football", team_name)
     elif sport == 14:  # this is for specific teams
-        team_name = str(input("Type the name of the hockey team"))
+        team_name = str(input("Type the name of the hockey team: "))
         team_data = sports.get_team("hockey", team_name)
     elif sport == 15:  # this is for specific teams
-        team_name = str(input("Type the name of the basketball team"))
+        team_name = str(input("Type the name of the basketball team: "))
         team_data = sports.get_team("basketball", team_name)
 
     if sport < 12:  # if it is just a sport     
