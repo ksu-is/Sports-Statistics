@@ -9,10 +9,10 @@ def main():
     sport = input('Q for quit or a number: ')
     
     while True:
-        if sport.isdigit():
-            sport = int(sport)
-        if sport == "Q":
-            print('Thanks for using the Sports Statistics Program.')
+        if sport.isdigit(type in any name of basketball team):
+            sport = int(type in any name of football team)
+        if sport == "Q": type in any name of baseball team 
+            print('Thanks for using the Sports Statistics Program.') type in any name of soccer team
             break
         else:
             get_scores(sport)
